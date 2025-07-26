@@ -117,3 +117,50 @@ img {
     gap: 8px;
     color: #000;
 }
+
+
+
+/* Banner Section */
+.banner {
+    background: #f5f8ff;
+    padding: 60px 0;
+    
+}
+
+.banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.banner-image {
+    flex: 1;
+    order: 2;
+}
+
+.banner-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.banner-content {
+    flex: 1;
+    order: 1;
+}
+
+.banner-title {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.banner-text {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
