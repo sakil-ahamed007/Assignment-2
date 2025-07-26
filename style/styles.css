@@ -502,3 +502,232 @@ img {
 .join-button:hover {
     background: #d25107;
 }
+
+
+/* Footer Section */
+.footer {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(9px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.footer-brand {
+    flex: 1;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #e95a08;
+}
+
+.footer-social img {
+    height: 32px;
+    width: auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Navbar Mobile */
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-cart-mobile {
+        display: flex;
+    }
+    
+    /* Banner Mobile */
+    .banner-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .banner-image {
+        order: 1;
+    }
+    
+    .banner-content {
+        order: 2;
+        text-align: left;
+    }
+    
+    .banner-title {
+        font-size: 45px;
+    }
+    
+    .banner-text {
+        font-size: 18px;
+    }
+    
+    /* Plants Grid Mobile */
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .plant-image {
+        height: 200px;
+    }
+    
+    .plant-info {
+        padding: 20px 15px;
+    }
+    
+    .plant-name,
+    .plant-price {
+        font-size: 18px;
+    }
+    
+    /* Plants Lover Mobile */
+    .plants-lover-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .plants-lover-image {
+        order: 1;
+    }
+    
+    .plants-lover-content {
+        order: 2;
+        text-align: left;
+    }
+    
+    .plants-lover-title {
+        font-size: 35px;
+    }
+    
+    .plants-lover-list li {
+        font-size: 18px;
+    }
+    
+    /* Hide trusted badge on mobile */
+    .trusted-badge {
+        display: none;
+    }
+    
+    /* Deals Mobile - Show only one card */
+    .deals-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+    
+    .large-deal .deal-image {
+        height: 300px;
+    }
+    
+    .large-title {
+        font-size: 28px;
+    }
+    
+    .large-link {
+        font-size: 20px;
+    }
+    
+    /* Join Mobile */
+    .join-title {
+        font-size: 35px;
+    }
+    
+    .join-form {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .join-input {
+        border-radius: 0;
+    }
+    
+    .join-button {
+        border-radius: 0;
+    }
+    
+    /* Footer Mobile */
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-description {
+        font-size: 18px;
+    }
+    
+    /* Section titles mobile */
+    .section-title {
+        font-size: 35px;
+    }
+    
+    .section-subtitle {
+        font-size: 18px;
+    }
+    
+    /* Padding adjustments */
+    .plants-section,
+    .plants-lover-section,
+    .deals-section {
+        padding: 60px 0;
+    }
+    
+    .banner {
+        padding: 40px 0;
+    }
+    
+    .join-section {
+        padding: 80px 0;
+    }
+    
+    .footer {
+        padding: 40px 0;
+    }
+}
