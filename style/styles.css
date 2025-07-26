@@ -436,3 +436,69 @@ img {
 .desktop-only {
     display: block;
 }
+
+/* Join Section */
+.join-section {
+    background-image: url('../images/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    position: relative;
+}
+
+.join-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.join-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.join-title {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.join-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.join-input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.join-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.join-button {
+    background: #e95a08;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background: #d25107;
+}
