@@ -256,3 +256,84 @@ img {
 .add-to-cart-btn:hover {
     background: #d25107;
 }
+
+
+/* Plants Lover Section */
+.plants-lover-section {
+    background: #f5f8ff;
+    padding: 80px 0;
+    position: relative;
+}
+
+.plants-lover-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position:relative;
+}
+
+.plants-lover-image {
+    flex: 1;
+    position: relative;
+}
+
+.plants-lover-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.trusted-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    animation: spin-infinite 5s linear infinite;
+}
+
+.trusted-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes spin-infinite {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.plants-lover-content {
+    flex: 1;
+}
+
+.plants-lover-title {
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.plants-lover-list {
+    list-style: none;
+}
+
+.plants-lover-list li {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.plants-lover-list li::before {
+    content: "•";
+    color: #e95a08;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
